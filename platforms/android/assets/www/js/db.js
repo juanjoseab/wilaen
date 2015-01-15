@@ -12,11 +12,18 @@ window.dbo = {
 		 		//console.log("no tengo rows");
 		 		window.dbo.db.transaction(function(tr){
 		 			console.log("ejecutanto statements");
-		 			tr.executeSql('CREATE TABLE IF NOT EXISTS mygallery (id unique, uri);');
-				    tr.executeSql('CREATE TABLE IF NOT EXISTS img (id unique, name, uri);');
-				    tr.executeSql('INSERT INTO img (id, name, uri) VALUES (1, "Ovni", "img/pics/ovni.png");');
-				    tr.executeSql('INSERT INTO img (id, name, uri) VALUES (2, "Creepy Chica", "img/pics/aro.png");');
-				    tr.executeSql('INSERT INTO img (id, name, uri) VALUES (3, "Samara", "img/pics/aro2.png");');
+		 			tr.executeSql('CREATE TABLE IF NOT EXISTS mygallery (id INTEGER PRIMARY KEY, uri);');
+				    tr.executeSql('CREATE TABLE IF NOT EXISTS img (id INTEGER PRIMARY KEY, name, uri);');
+				    tr.executeSql('INSERT INTO img (name, uri) VALUES ("Ovni", "img/pics/ovni.png");');
+				    tr.executeSql('INSERT INTO img (name, uri) VALUES ("Creepy Chica", "img/pics/aro.png");');
+				    tr.executeSql('INSERT INTO img (name, uri) VALUES ("Samara", "img/pics/aro2.png");');
+				    tr.executeSql('INSERT INTO img (name, uri) VALUES ("Alien Oscuro", "img/pics/alien1.png");');
+				    tr.executeSql('INSERT INTO img (name, uri) VALUES ("Alien Claro", "img/pics/alien2.png");');
+				    tr.executeSql('INSERT INTO img (name, uri) VALUES ("Chica Zombi", "img/pics/chica-zombi.png");');
+				    tr.executeSql('INSERT INTO img (name, uri) VALUES ("Zombi", "img/pics/zombi.png");');
+				    tr.executeSql('INSERT INTO img (name, uri) VALUES ("Chupacabras", "img/pics/chupacabras.png");');
+				    tr.executeSql('INSERT INTO img (name, uri) VALUES ("Fantasmas", "img/pics/ninos-fantasma.png");');
+				    tr.executeSql('INSERT INTO img (name, uri) VALUES ("Cara malvada", "img/pics/face.png");');
 				    console.log("fin de los  statements");
 				}, function(trerr){
 					console.log(trerr.message);
@@ -54,6 +61,18 @@ window.dbo = {
 	successCB : function () {
 	    //alert("success!");
 	    return true;
+	},
+	saveImg : function(imgdata) {
+		window.dbo.db.transaction(function(tr){
+		 			console.log("Guardando imagen");
+				    tr.executeSql('INSERT INTO mygallery (uri) VALUES ( "'+imgdata+'");');
+				}, function(trerr){
+					console.log(trerr.message);
+					return false;
+				}, function(tr){
+					//console.log(tr);
+					return true;
+				});
 	}
 
 }
