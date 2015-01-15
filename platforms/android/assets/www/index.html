@@ -36,20 +36,27 @@
     <body>        
 
         <div data-role="page" id="home">
-            <div data-role="header">
-                <h1>My Title</h1>
-            </div><!-- /header -->
-     
+                
             <div data-role="content">
-                <p>Hello world - am in home</p>
-                <a href="#create" data-transition="flip" class="ui-btn ui-shadow ui-corner-all">Show page "create"</a>
-
-                <span class="ui-btn" id="openAlbumLink" >abrir camara</span>
-
+                <div class="middleContent">
+                    <p>Crea tu</p>
+                    <h1>CreepyPic</h1>
+                    <p>Con tus fotos y nuestra galer&iacute;a de imagenes</p>
+                </div>
             </div><!-- /content -->
      
             <div data-role="footer" class="footer">
-                <h4>My Footer</h4>
+                <div class="footer-init">                    
+                    <span class="ui-btn" id="gotoMyCreepyGallery">Mis CreepyPics</span>
+                    <span class="ui-btn" id="nuevaCreepyPic">Nueva CreepyPic</span>
+                </div>
+
+                <div class="footer-create">
+                    <span class="ui-btn" id="regresarahome" >Regresar</span>
+                    <span class="ui-btn" id="openAlbum">Mis fotos</span>
+                    <span class="ui-btn" id="openCamera">Nueva foto</span>
+                </div>
+                    
             </div><!-- /footer --> 
 
             
@@ -57,10 +64,31 @@
 
         <div data-role="page" id="create">
             <div data-role="content" id="canvasContent">                
-            </div><!-- /content -->
+            </div>
      
             <div data-role="footer" class="footer" id="canvasFooter">
-                <a href="#home" data-transition="flip" class="ui-btn ui-shadow ui-corner-all">Show page "home"</a>
+                <span id="openCreepyAlbum" data-transition="flip" class="ui-btn ui-shadow ui-corner-all">Creepy Galleria</span>
+            </div><!-- /footer -->     
+            
+        </div>
+
+
+        <div data-role="page" id="creepygallery">
+            <div data-role="content" class="ui-grid-b" id="CreepyGalleryContent">
+                    
+            </div><!-- /content -->     
+            <div data-role="footer" class="footer" id="canvasFooter">
+                <span id="selectImgs" data-transition="flip" class="ui-btn ui-shadow ui-corner-all">Select images</span>
+            </div><!-- /footer -->     
+            
+        </div>
+
+        <div data-role="page" id="mycreepygallery">
+            <div data-role="content" class="ui-grid-b" id="MyCreepyGalleryContent">
+                    
+            </div><!-- /content -->
+            <div data-role="footer" class="footer" id="canvasFooter">
+                <span data-transition="flip" class="ui-btn ui-shadow ui-corner-all irahome">Ir a home</span>
             </div><!-- /footer -->     
             
         </div>
@@ -68,7 +96,19 @@
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="bower_components/fastclick/lib/fastclick.js"></script>
         <script type="text/javascript" src="bower_components/jquery/jquery.js"></script>
-        <script type="text/javascript" src="lib/jquery-mobile/jquery.mobile-1.4.5.js"></script>        
+        <script type="text/javascript" src="lib/jquery-mobile/jquery.mobile-1.4.5.js"></script>
+        
+        <script type="text/javascript" src="bower_components/jquery-ui/ui/jquery.ui.core.js"></script>
+        <script type="text/javascript" src="bower_components/jquery-ui/ui/jquery.ui.widget.js"></script>
+        <script type="text/javascript" src="bower_components/jquery-ui/ui/jquery.ui.mouse.js"></script>
+        <script type="text/javascript" src="bower_components/jquery-ui/ui/jquery.ui.draggable.js"></script>
+        <script type="text/javascript" src="bower_components/jquery-ui/ui/jquery.ui.droppable.js"></script>
+        <script type="text/javascript" src="bower_components/jquery-ui/ui/jquery.ui.resizable.js"></script>
+        <script type="text/javascript" src="bower_components/jquery-ui/ui/jquery.ui.effect.js"></script>
+        <script type="text/javascript" src="bower_components/jquery-ui/ui/jquery.ui.effect-clip.js"></script>
+        <script type="text/javascript" src="bower_components/jquery-ui/ui/jquery.ui.effect-drop.js"></script>
+        <script type="text/javascript" src="lib/jquery.ui.touch-punch.js"></script>
+        <script type="text/javascript" src="js/db.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>

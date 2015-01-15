@@ -1,3 +1,7 @@
+
+.footer-create {
+	display: none;
+}
 canvas#lienzo{
 
 	width: 100%;
@@ -7,6 +11,7 @@ canvas#lienzo{
 #canvasFooter {
 	position: absolute;
 	bottom: 0;
+	width: 100%;
 }
 
 canvas {
@@ -14,6 +19,43 @@ canvas {
 
 }
 
-#create .ui-content {
+#create .ui-content, #creepygallery .ui-content{
 	padding: 0 !important;
+}
+
+#canvasContent {
+	overflow: hidden;	
+}
+
+.draggable-test {
+		width: 100%;
+		overflow: hidden;
+}
+.draggable-test {
+	width: 200px;
+	height: auto;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9999999;
+}
+
+div.ui-block-b.creepy-galleryitem {
+	min-height: 100px;
+	background-size: 100%  auto !important;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+}
+
+div.ui-block-b.creepy-galleryitem span {
+	display: block;
+	width: 100%;
+	background-color: #333;
+	color: #fff;
+	font-size: 14px;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
 }

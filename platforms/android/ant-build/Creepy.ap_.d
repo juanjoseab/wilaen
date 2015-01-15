@@ -2017,8 +2017,14 @@ c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\bower_compone
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\bower_components\jquery-ui-tabs\ui\i18n\jquery.ui.datepicker-zh-TW.js \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\css\index.css \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\img\logo.png \
+c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\img\pics \
+c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\img\pics\aro.png \
+c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\img\pics\aro2.png \
+c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\img\pics\ovni.png \
+c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\js\db.js \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\js\index.js \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\lib\jquery-mobile \
+c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\lib\jquery.ui.touch-punch.js \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\lib\jquery-mobile\demos \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\lib\jquery-mobile\images \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\lib\jquery-mobile\jquery.mobile-1.4.5.css \
