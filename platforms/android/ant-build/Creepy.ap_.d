@@ -34,6 +34,7 @@ c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\img \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\index.html \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\js \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\lib \
+c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\phonegap.js \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\res \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\spec \
@@ -2049,6 +2050,7 @@ c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\img\galeria-b
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\img\galeria.png \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\img\logo.png \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\img\pics \
+c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\img\share.png \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\img\testpics \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\img\controls\bg.png \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\img\controls\cancel.png \
@@ -2816,12 +2818,15 @@ c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\lib\jquery-mo
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\lib\jquery-mobile\images\icons-svg\user-white.svg \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\lib\jquery-mobile\images\icons-svg\video-black.svg \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\lib\jquery-mobile\images\icons-svg\video-white.svg \
+c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins\nl.x-services.plugins.socialsharing \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins\org.apache.cordova.camera \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins\org.apache.cordova.device \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins\org.apache.cordova.file \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins\org.apache.cordova.file-transfer \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins\org.apache.cordova.media \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins\org.apache.cordova.media-capture \
+c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins\nl.x-services.plugins.socialsharing\www \
+c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins\nl.x-services.plugins.socialsharing\www\SocialSharing.js \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins\org.apache.cordova.camera\www \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins\org.apache.cordova.camera\www\Camera.js \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins\org.apache.cordova.camera\www\CameraConstants.js \

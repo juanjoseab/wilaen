@@ -12,6 +12,7 @@ $(function(){
     window.dbo.init();
     var imgs = [];
     var imgObj = [];
+    var selectPic;
     var canvas;
     var fadeimg = 1;
 
@@ -239,6 +240,10 @@ $(function(){
 
     });
 
+    $(".sharepic").click(function(){
+        window.plugins.socialsharing.share(null, 'Android filename', selectPic, null);
+    });
+
     $("#cancelimg").click(function(){
         $("#canvasContent canvas").remove();
         $("#draggable-test").remove();
@@ -282,6 +287,7 @@ $(function(){
         var img_src = $(this).attr('img-src');
         $('#creepyImgBox img').remove();
         $('#creepyImgBox').append('<img src="'+img_src+'" />');
+        selectPic = img_src;
         $.mobile.changePage("#mycreepyimage", { transition: "flip", changeHash: false });
     })
 });

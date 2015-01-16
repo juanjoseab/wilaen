@@ -6,6 +6,13 @@ c:\xampp\htdocs\movil-projects\wilaen\platforms\android\ant-build\classes\com\wi
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\ant-build\classes\com\wilaen\creepy\R$string.class \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\ant-build\classes\com\wilaen\creepy\R$xml.class \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\ant-build\classes\com\wilaen\creepy\R.class \
+c:\xampp\htdocs\movil-projects\wilaen\platforms\android\ant-build\classes\nl\xservices\plugins\SocialSharing$1.class \
+c:\xampp\htdocs\movil-projects\wilaen\platforms\android\ant-build\classes\nl\xservices\plugins\SocialSharing$2$1$1.class \
+c:\xampp\htdocs\movil-projects\wilaen\platforms\android\ant-build\classes\nl\xservices\plugins\SocialSharing$2$1.class \
+c:\xampp\htdocs\movil-projects\wilaen\platforms\android\ant-build\classes\nl\xservices\plugins\SocialSharing$2.class \
+c:\xampp\htdocs\movil-projects\wilaen\platforms\android\ant-build\classes\nl\xservices\plugins\SocialSharing$3.class \
+c:\xampp\htdocs\movil-projects\wilaen\platforms\android\ant-build\classes\nl\xservices\plugins\SocialSharing$SocialSharingRunnable.class \
+c:\xampp\htdocs\movil-projects\wilaen\platforms\android\ant-build\classes\nl\xservices\plugins\SocialSharing.class \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\ant-build\classes\org\apache\cordova\camera\CameraLauncher.class \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\ant-build\classes\org\apache\cordova\camera\ExifHelper.class \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\ant-build\classes\org\apache\cordova\camera\FileHelper.class \
