@@ -34,7 +34,6 @@ c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\img \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\index.html \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\js \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\lib \
-c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\phonegap.js \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\res \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\spec \

@@ -67,11 +67,11 @@ $(function(){
     });
 
     function openAlbum() {
-        /*console.log('en la funcion del album');
+        console.log('en la funcion del album');
         createCanvas("img/testpics/rw.jpg");
         $.mobile.changePage( "#create", { transition: "flip", changeHash: false });
-        */
         
+        /*
         navigator.camera.getPicture(function(imageData){
             createCanvas(imageData);
             $.mobile.changePage( "#create", { transition: "flip", changeHash: false });
@@ -83,13 +83,15 @@ $(function(){
                 sourceType: 0,
                 destinationType: 1,
         });
+        */
     }
 
     function openCamera() {
-        /*console.log('en la funcion de la camara');
+        console.log('en la funcion de la camara');
         createCanvas("img/testpics/ce.jpg");
         $.mobile.changePage( "#create", { transition: "flip", changeHash: false });
-        */
+        
+        /*
         navigator.camera.getPicture(function(imageData){
             createCanvas(imageData);
             $.mobile.changePage( "#create", { transition: "flip", changeHash: false });
@@ -101,7 +103,7 @@ $(function(){
                 sourceType: 1,
                 destinationType: 1,
         });
-        
+        */
     }
 
     //dataURL = canvas.toDataURL();
