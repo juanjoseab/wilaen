@@ -44,11 +44,29 @@ $(function(){
     });
     document.addEventListener("backbutton", function(e){
         if($.mobile.activePage.is('#home')){
-            
+            return false;
         }
-        else {
-            navigator.app.backHistory()
+
+        if($.mobile.activePage.is('#nuevacreepy')){
+            $.mobile.changePage("#home", { transition: "flip", changeHash: false });
         }
+
+        if($.mobile.activePage.is('#create')){
+            $.mobile.changePage("#nuevacreepy", { transition: "flip", changeHash: false });
+        }
+
+        if($.mobile.activePage.is('#creepygallery')){
+            $.mobile.changePage("#create", { transition: "flip", changeHash: false });
+        }
+
+        if($.mobile.activePage.is('#mycreepygallery')){
+            $.mobile.changePage("#home", { transition: "flip", changeHash: false });
+        }
+
+        if($.mobile.activePage.is('#mycreepyimage')){
+            $.mobile.changePage("#mycreepygallery", { transition: "flip", changeHash: false });
+        }
+
     }, false);
 
 

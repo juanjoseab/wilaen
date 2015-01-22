@@ -9,6 +9,7 @@ c:\xampp\htdocs\movil-projects\wilaen\platforms\android\res\drawable-port-hdpi\s
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\res\drawable-port-ldpi\screen.png \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\res\drawable-port-mdpi\screen.png \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\res\drawable-port-xhdpi\screen.png \
+c:\xampp\htdocs\movil-projects\wilaen\platforms\android\res\drawable-xxhdpi\icon.png \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\res\values\strings.xml \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\res\xml\config.xml \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\ant-build\res\drawable\icon.png \
@@ -21,6 +22,7 @@ c:\xampp\htdocs\movil-projects\wilaen\platforms\android\ant-build\res\drawable-p
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\ant-build\res\drawable-port-ldpi\screen.png \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\ant-build\res\drawable-port-mdpi\screen.png \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\ant-build\res\drawable-port-xhdpi\screen.png \
+c:\xampp\htdocs\movil-projects\wilaen\platforms\android\ant-build\res\drawable-xxhdpi\icon.png \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\_where-is-www.txt \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\bower_components \
@@ -34,7 +36,6 @@ c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\img \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\index.html \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\js \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\lib \
-c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\phonegap.js \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\res \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\spec \
@@ -101,7 +102,6 @@ c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\bower_compone
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\bower_components\jquery\src\outro.js \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\bower_components\jquery\src\queue.js \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\bower_components\jquery\src\serialize.js \
-c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\bower_components\jquery\src\sizzle \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\bower_components\jquery\src\sizzle-jquery.js \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\bower_components\jquery\src\support.js \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\bower_components\jquery\src\traversing.js \
@@ -116,7 +116,6 @@ c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\bower_compone
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\bower_components\jquery\test\jquery.js \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\bower_components\jquery\test\localfile.html \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\bower_components\jquery\test\networkerror.html \
-c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\bower_components\jquery\test\qunit \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\bower_components\jquery\test\readywait.html \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\bower_components\jquery\test\unit \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\bower_components\jquery\test\xhtml.php \
@@ -2018,6 +2017,7 @@ c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\bower_compone
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\bower_components\jquery-ui-tabs\ui\i18n\jquery.ui.datepicker-zh-HK.js \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\bower_components\jquery-ui-tabs\ui\i18n\jquery.ui.datepicker-zh-TW.js \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\css\index.css \
+c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\css\media.css \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\fonts\Amarante-Regular.eot \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\fonts\Amarante-Regular.otf \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\fonts\Amarante-Regular.svg \
@@ -2072,6 +2072,7 @@ c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\img\pics\nino
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\img\pics\ovni.png \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\img\pics\zombi.png \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\img\testpics\ce.jpg \
+c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\img\testpics\paisaje.jpg \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\img\testpics\rw.jpg \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\js\db.js \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\js\grid.js \
