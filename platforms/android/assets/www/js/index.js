@@ -9,12 +9,14 @@
 //document.addEventListener("deviceready", onDeviceReady, false);
 //function onDeviceReady () {
 $(function(){
+    FastClick.attach(document.body);
     window.dbo.init();
     var imgs = [];
     var imgObj = [];
     var selectPic;
     var canvas;
     var fadeimg = 1;
+    var photoData;
 
     function resizes(){
         var windowHeight = $(window).height();
@@ -28,12 +30,33 @@ $(function(){
         $("#nuevacreepy .home_center_container").css('top', (windowHeight/2) - $(".home_center_container").height() + 'px');
         //$('.creepyfooter').css('bottom',windowHeight - 120 + "px");
         $('.creepyfooter').css('bottom',0);
-
     }
     resizes();
     $(window).resize(function(){
         resizes();
-    })
+
+        if(photoData){
+            createCanvas();
+        }
+        if(selectPic){
+            insertImg();
+        }        
+    });
+    document.addEventListener("backbutton", function(e){
+        console.log(e);
+        if($.mobile.activePage.is('#home')){
+            console.log("estoy en la pagina home");
+            return false;    
+        }
+        else {
+            console.log("No estoy en la pagina home");
+            navigator.app.backHistory();
+        }
+    }, false);
+
+
+
+
     $('#openAlbum').click(function(){
         console.info('se disparo openAlbum');
         openAlbum();            
@@ -68,7 +91,8 @@ $(function(){
 
     function openAlbum() {
         console.log('en la funcion del album');
-        createCanvas("img/testpics/rw.jpg");
+        photoData = "img/testpics/rw.jpg";
+        createCanvas();
         $.mobile.changePage( "#create", { transition: "flip", changeHash: false });
         
         /*
@@ -88,7 +112,8 @@ $(function(){
 
     function openCamera() {
         console.log('en la funcion de la camara');
-        createCanvas("img/testpics/ce.jpg");
+        photoData = "img/testpics/paisaje.jpg";
+        createCanvas();
         $.mobile.changePage( "#create", { transition: "flip", changeHash: false });
         
         /*
@@ -108,16 +133,26 @@ $(function(){
 
     //dataURL = canvas.toDataURL();
 
-    function createCanvas(imageData){
+    function createCanvas(){
         var photo = new Image();
-        photo.src = imageData; 
-        $("#canvasContent canvas").remove();            
-            
+        photo.src = photoData; 
+        $("#canvasContent canvas").remove();
         $(photo).on("load",function(){
-            var imgW = $(window).width();
-            var imgH = Math.round($(window).width() * photo.height/photo.width);
+
+            var imgW;
+            var imgH;
+
+            if(photo.width > photo.height){
+                imgW = $(window).width();
+                imgH = Math.round($(window).width() * photo.height/photo.width);
+            }else if(photo.width < photo.height){                
+                imgH = $(window).height();
+                imgW = Math.round($(window).height() * photo.width/photo.height);
+            }else {
+                alert("es cuadrada");
+            }            
             $("#canvasContent").height( imgH  + "px");
-            canvas = document.createElement('canvas');            
+            canvas = document.createElement('canvas');
             canvas.width = imgW;
             canvas.height = imgH;
             $("#canvasContent").append(canvas);
@@ -194,7 +229,6 @@ $(function(){
             "left" : 0,
             "top": 0
         }
-        console.log(imgObj);
         insertImg();
         $.mobile.changePage( "#create", { transition: "slide", changeHash: false });
     });
@@ -293,4 +327,3 @@ $(function(){
         $.mobile.changePage("#mycreepyimage", { transition: "flip", changeHash: false });
     })
 });
-

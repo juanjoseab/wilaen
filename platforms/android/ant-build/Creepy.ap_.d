@@ -2017,6 +2017,7 @@ c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\bower_compone
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\bower_components\jquery-ui-tabs\ui\i18n\jquery.ui.datepicker-zh-HK.js \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\bower_components\jquery-ui-tabs\ui\i18n\jquery.ui.datepicker-zh-TW.js \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\css\index.css \
+c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\css\media.css \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\fonts\Amarante-Regular.eot \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\fonts\Amarante-Regular.otf \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\fonts\Amarante-Regular.svg \
@@ -2071,6 +2072,7 @@ c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\img\pics\nino
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\img\pics\ovni.png \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\img\pics\zombi.png \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\img\testpics\ce.jpg \
+c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\img\testpics\paisaje.jpg \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\img\testpics\rw.jpg \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\js\db.js \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\js\grid.js \

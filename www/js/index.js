@@ -43,11 +43,14 @@ $(function(){
         }        
     });
     document.addEventListener("backbutton", function(e){
+        console.log(e);
         if($.mobile.activePage.is('#home')){
-            
+            console.log("estoy en la pagina home");
+            return false;    
         }
         else {
-            navigator.app.backHistory()
+            console.log("No estoy en la pagina home");
+            navigator.app.backHistory();
         }
     }, false);
 
