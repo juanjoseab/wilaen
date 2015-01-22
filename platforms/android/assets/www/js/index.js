@@ -5,9 +5,6 @@
 });
 */
 
-//document.addEventListener("deviceready", onDeviceReady, false);
-//document.addEventListener("deviceready", onDeviceReady, false);
-//function onDeviceReady () {
 $(function(){
     FastClick.attach(document.body);
     window.dbo.init();
@@ -45,13 +42,29 @@ $(function(){
     document.addEventListener("backbutton", function(e){
         console.log(e);
         if($.mobile.activePage.is('#home')){
-            console.log("estoy en la pagina home");
-            return false;    
+            return false;
         }
-        else {
-            console.log("No estoy en la pagina home");
-            navigator.app.backHistory();
+
+        if($.mobile.activePage.is('#nuevacreepy')){
+            $.mobile.changePage("#home", { transition: "flip", changeHash: false });
         }
+
+        if($.mobile.activePage.is('#create')){
+            $.mobile.changePage("#nuevacreepy", { transition: "flip", changeHash: false });
+        }
+
+        if($.mobile.activePage.is('#creepygallery')){
+            $.mobile.changePage("#create", { transition: "flip", changeHash: false });
+        }
+
+        if($.mobile.activePage.is('#mycreepygallery')){
+            $.mobile.changePage("#home", { transition: "flip", changeHash: false });
+        }
+
+        if($.mobile.activePage.is('#mycreepyimage')){
+            $.mobile.changePage("#mycreepygallery", { transition: "flip", changeHash: false });
+        }
+
     }, false);
 
 
@@ -238,7 +251,7 @@ $(function(){
         if(imgObj.url != undefined){
             var it = $('<div class="draggable-test" id="draggable-test"><img border="0" src="'+imgObj.url +'" width="100%" /></div>');
             it.draggable({ 
-                containment: $("body"),
+                containment: $("#canvasContent"),
                 scroll: false,
                 stop: function( event, ui ) {
                     var Stoppos = $(this).position();                    
@@ -317,7 +330,6 @@ $(function(){
 
         });
     }    
-    
 
     $('body').on('click','.gallery-item-box',function(){
         var img_src = $(this).attr('img-src');
