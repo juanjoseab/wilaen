@@ -9,6 +9,10 @@
                 "parents": {
                     "/*": [
                         {
+                            "xml": "<feature name=\"SocialSharing\"><param name=\"android-package\" value=\"nl.xservices.plugins.SocialSharing\" /></feature>",
+                            "count": 1
+                        },
+                        {
                             "xml": "<feature name=\"Camera\"><param name=\"android-package\" value=\"org.apache.cordova.camera.CameraLauncher\" /></feature>",
                             "count": 1
                         },
@@ -33,7 +37,7 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"SocialSharing\"><param name=\"android-package\" value=\"nl.xservices.plugins.SocialSharing\" /></feature>",
+                            "xml": "<feature name=\"Notification\"><param name=\"android-package\" value=\"org.apache.cordova.dialogs.Notification\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -41,6 +45,12 @@
             },
             "AndroidManifest.xml": {
                 "parents": {
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 1
+                        }
+                    ],
                     "/*": [
                         {
                             "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
@@ -62,18 +72,15 @@
                             "xml": "<uses-permission android:name=\"android.permission.RECORD_VIDEO\" />",
                             "count": 1
                         }
-                    ],
-                    "/manifest": [
-                        {
-                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
-                            "count": 1
-                        }
                     ]
                 }
             }
         }
     },
     "installed_plugins": {
+        "nl.x-services.plugins.socialsharing": {
+            "PACKAGE_NAME": "com.wilaen.creepy"
+        },
         "org.apache.cordova.camera": {
             "PACKAGE_NAME": "com.wilaen.creepy"
         },
@@ -95,7 +102,7 @@
         "org.apache.cordova.media-capture": {
             "PACKAGE_NAME": "com.wilaen.creepy"
         },
-        "nl.x-services.plugins.socialsharing": {
+        "org.apache.cordova.dialogs": {
             "PACKAGE_NAME": "com.wilaen.creepy"
         }
     },

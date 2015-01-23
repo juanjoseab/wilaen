@@ -1,10 +1,5 @@
 #Last build type
-#Thu, 22 Jan 2015 12:30:29 -0600
-<<<<<<<=HEAD
-#Wed, 21 Jan 2015 15:25:37 -0600
-=\=\=\=\=\=\=
-#Wed, 21 Jan 2015 22:40:24 -0600
->>>>>>>=a50aeda08fbdf5c5d0f5a69bbeb7bd2549154821
+#Thu, 22 Jan 2015 21:28:13 -0600
 
 build.last.target=debug
 

@@ -103,45 +103,48 @@ $(function(){
     });
 
     function openAlbum() {
+        /*
         console.log('en la funcion del album');
         photoData = "img/testpics/rw.jpg";
         createCanvas();
         $.mobile.changePage( "#create", { transition: "flip", changeHash: false });
+        */
         
-        /*
         navigator.camera.getPicture(function(imageData){
-            createCanvas(imageData);
+            photoData = imageData;
+            createCanvas();
             $.mobile.changePage( "#create", { transition: "flip", changeHash: false });
             //alert(imageData);
         }, function(error){console.log(error);}, 
-            {quality: 70,  
-                targetWidth: 500, 
-                targetHeight: 500,
+            {
+                quality: 50,
                 sourceType: 0,
                 destinationType: 1,
+                correctOrientation: true
         });
-        */
+        
     }
 
     function openCamera() {
-        console.log('en la funcion de la camara');
+        /*console.log('en la funcion de la camara');
         photoData = "img/testpics/paisaje.jpg";
         createCanvas();
         $.mobile.changePage( "#create", { transition: "flip", changeHash: false });
+        */
         
-        /*
         navigator.camera.getPicture(function(imageData){
-            createCanvas(imageData);
+            photoData = imageData;
+            createCanvas();
             $.mobile.changePage( "#create", { transition: "flip", changeHash: false });
             //alert(imageData);
         }, function(error){console.log(error);}, 
-            {quality: 70,  
-                targetWidth: 500, 
-                targetHeight: 500,
+            {
+                quality: 50,
                 sourceType: 1,
                 destinationType: 1,
+                correctOrientation: true
         });
-        */
+        
     }
 
     //dataURL = canvas.toDataURL();
@@ -271,6 +274,26 @@ $(function(){
     
 
     $("#guardarImg").click(function(){
+
+        navigator.notification.confirm(
+            '\u00BFRealmente deseas guardar esta imagen en tu CreepyAlbum?',  // message
+            function(){ guarderImagen(); },         // callback
+            'CreepyPic',            // title
+            ['Si','No']                  // buttonName
+        );
+    });
+
+    $("#cancelimg").click(function(){
+        navigator.notification.confirm(
+            '\u00BFRealmente eliminar esta imagen?',  // message
+            function(){ cancelarImagen(); },         // callback
+            'CreepyPic',            // title
+            ['Si','No']                  // buttonName
+        );
+
+    });
+
+    function guarderImagen(){
         var imagen = new Image();
         imagen.src = imgObj.url;
         var lienzo = canvas.getContext("2d");
@@ -286,18 +309,19 @@ $(function(){
             window.dbo.saveImg(imgData);
             prepareMyCreepyGallery();
         });
+    }
 
-    });
+    function cancelarImagen(){
+        $("#canvasContent canvas").remove();
+        $("#draggable-test").remove();
+        $.mobile.changePage( "#home", { transition: "slide", changeHash: false });
+    }
 
     $(".sharepic").click(function(){
         window.plugins.socialsharing.share(null, 'Android filename', selectPic, null);
     });
 
-    $("#cancelimg").click(function(){
-        $("#canvasContent canvas").remove();
-        $("#draggable-test").remove();
-         $.mobile.changePage( "#home", { transition: "slide", changeHash: false });
-    });
+    
 
     $("#gotoMyCreepyGallery, .gotoMyCreepyGallery").click(function(){
         prepareMyCreepyGallery();
@@ -319,7 +343,13 @@ $(function(){
                 $('.gallery-item-box').height($(window).width()/3);
                 $.mobile.changePage("#mycreepygallery", { transition: "flip", changeHash: false });
             }else{
-                alert("Aun no has creado ninguna creepyPic");
+                //alert("Aun no has creado ninguna creepyPic");
+                navigator.notification.alert(
+                    'A\u00fan no tienes fotos en tu CreepyAlbum',  // message
+                    function(){ return false;},         // callback
+                    'Album CreepyPic',            // title
+                    'De acuerdo'                  // buttonName
+                );
             }
         });
         },

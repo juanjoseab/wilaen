@@ -34,6 +34,7 @@ c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\img \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\index.html \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\js \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\lib \
+c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\phonegap.js \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\res \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\spec \
@@ -2822,6 +2823,7 @@ c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\lib\jquery-mo
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins\nl.x-services.plugins.socialsharing \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins\org.apache.cordova.camera \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins\org.apache.cordova.device \
+c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins\org.apache.cordova.dialogs \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins\org.apache.cordova.file \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins\org.apache.cordova.file-transfer \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins\org.apache.cordova.media \
@@ -2835,6 +2837,10 @@ c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins\org.a
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins\org.apache.cordova.camera\www\CameraPopoverOptions.js \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins\org.apache.cordova.device\www \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins\org.apache.cordova.device\www\device.js \
+c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins\org.apache.cordova.dialogs\www \
+c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins\org.apache.cordova.dialogs\www\android \
+c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins\org.apache.cordova.dialogs\www\notification.js \
+c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins\org.apache.cordova.dialogs\www\android\notification.js \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins\org.apache.cordova.file\www \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins\org.apache.cordova.file\www\android \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\assets\www\plugins\org.apache.cordova.file\www\DirectoryEntry.js \
