@@ -73,15 +73,24 @@
         <div data-role="page" id="create">
             <div data-role="content" id="canvasContent">
             </div>
+            <div class="canvasOverLayer" id="canvasOverLayer">                
+            </div>
 
-            <div id="canvas_controls">
-                <img src="img/controls/squares.png" id="openCreepyAlbum" data-transition="slide" />
-                <img src="img/controls/expand.png" id="expandimg" />
-                <img src="img/controls/collapse.png" id="collapseimg" />
-                <img src="img/controls/plus.png" id="plusimg" />
-                <img src="img/controls/minus.png" id="minusimg" />
+            <div>
                 <img src="img/controls/cancel.png" id="cancelimg" />
                 <img src="img/controls/ok.png" id="guardarImg" />
+            </div>
+
+            <div class="wrap_controls">
+                <div>
+                    <img src="img/controls/squares.png" id="openCreepyAlbum" data-transition="slide" />
+                    <img src="img/controls/expand.png" id="expandimg" />
+                    <img src="img/controls/collapse.png" id="collapseimg" />
+                    <img src="img/controls/plus.png" id="plusimg" />
+                    <img src="img/controls/minus.png" id="minusimg" />
+                        
+                </div>
+                
             </div>
 
      
@@ -138,6 +147,7 @@
         <script type="text/javascript" src="bower_components/jquery-ui/ui/jquery.ui.effect-clip.js"></script>
         <script type="text/javascript" src="bower_components/jquery-ui/ui/jquery.ui.effect-drop.js"></script>
         <script type="text/javascript" src="lib/jquery.ui.touch-punch.js"></script>
+        <script type="text/javascript" src="lib/jquery-rotate.js"></script>
         <script type="text/javascript" src="js/grid.js"></script>
         <script type="text/javascript" src="js/db.js"></script>
         <script type="text/javascript" src="js/index.js"></script>

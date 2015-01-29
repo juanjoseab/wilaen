@@ -1,6 +1,6 @@
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\ant-build\classes.dex : \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\ant-build\classes\com\wilaen\creepy\BuildConfig.class \
-c:\xampp\htdocs\movil-projects\wilaen\platforms\android\ant-build\classes\com\wilaen\creepy\Creepy.class \
+c:\xampp\htdocs\movil-projects\wilaen\platforms\android\ant-build\classes\com\wilaen\creepy\CordovaApp.class \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\ant-build\classes\com\wilaen\creepy\R$attr.class \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\ant-build\classes\com\wilaen\creepy\R$drawable.class \
 c:\xampp\htdocs\movil-projects\wilaen\platforms\android\ant-build\classes\com\wilaen\creepy\R$string.class \

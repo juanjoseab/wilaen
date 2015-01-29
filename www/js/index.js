@@ -28,6 +28,13 @@ $(function(){
         //$('.creepyfooter').css('bottom',windowHeight - 120 + "px");
         $('.creepyfooter').css('bottom',0);
     }
+
+    setInterval(function(){
+        var windowHeight = $(window).height();
+        var ctrlBtnW = $(".wrap_controls div img").width();
+        $(".wrap_controls div").css ("height" , windowHeight/5 + "px !important").width(ctrlBtnW * 5);
+    },500);
+
     resizes();
     $(window).resize(function(){
         resizes();
@@ -55,6 +62,7 @@ $(function(){
 
         if($.mobile.activePage.is('#creepygallery')){
             $.mobile.changePage("#create", { transition: "flip", changeHash: false });
+            resizes();
         }
 
         if($.mobile.activePage.is('#mycreepygallery')){
@@ -72,13 +80,17 @@ $(function(){
 
     $('#openAlbum').click(function(){
         console.info('se disparo openAlbum');
-        openAlbum();            
+        //openAlbum();
+        openAlbumTest();
     });
 
     $('#openCamera').click(function(){
         console.info('se disparo openAlbum');
-        openCamera();            
+        //openCamera();
+        openCameraTest();
     });
+
+
     function iraHome(){
         $.mobile.changePage("#home", { transition: "flip", changeHash: false });
     }
@@ -103,13 +115,7 @@ $(function(){
     });
 
     function openAlbum() {
-        /*
-        console.log('en la funcion del album');
-        photoData = "img/testpics/rw.jpg";
-        createCanvas();
-        $.mobile.changePage( "#create", { transition: "flip", changeHash: false });
-        */
-        
+    
         navigator.camera.getPicture(function(imageData){
             photoData = imageData;
             createCanvas();
@@ -125,13 +131,7 @@ $(function(){
         
     }
 
-    function openCamera() {
-        /*console.log('en la funcion de la camara');
-        photoData = "img/testpics/paisaje.jpg";
-        createCanvas();
-        $.mobile.changePage( "#create", { transition: "flip", changeHash: false });
-        */
-        
+    function openCamera() {        
         navigator.camera.getPicture(function(imageData){
             photoData = imageData;
             createCanvas();
@@ -145,6 +145,20 @@ $(function(){
                 correctOrientation: true
         });
         
+    }
+
+    function openAlbumTest(){
+        console.log('en la funcion del album');
+        photoData = "img/testpics/rw.jpg";
+        createCanvas();
+        $.mobile.changePage( "#create", { transition: "flip", changeHash: false });
+    }
+
+    function openCameraTest(){
+        console.log('en la funcion de la camara');
+        photoData = "img/testpics/paisaje.jpg";
+        createCanvas();
+        $.mobile.changePage( "#create", { transition: "flip", changeHash: false });
     }
 
     //dataURL = canvas.toDataURL();
@@ -251,8 +265,26 @@ $(function(){
 
     function insertImg(){
         $('.draggable-test').remove();
+        $('.resizable-item').remove();
         if(imgObj.url != undefined){
-            var it = $('<div class="draggable-test" id="draggable-test"><img border="0" src="'+imgObj.url +'" width="100%" /></div>');
+            var params = {
+                // Callback fired on rotation start.
+                start: function(event, ui) {
+                },
+                // Callback fired during rotation.
+                rotate: function(event, ui) {
+                },
+                // Callback fired on rotation end.
+                stop: function(event, ui) {
+                },
+            };      
+
+            var creepyimgItem = $('<div><img  src="'+imgObj.url +'" /></div>').rotatable(params);
+            var resizable = $('<div class="resizable-item" id="resizable-item" > </div>').resizable({
+                aspectRatio: true,
+                handles: 'ne, se, sw, nw'
+            });
+            var it = $('<div class="draggable-test" id="draggable-test" />');
             it.draggable({ 
                 containment: $("#canvasContent"),
                 scroll: false,
@@ -264,8 +296,10 @@ $(function(){
                     
                 }
             });
+            it.appendTo('#canvasOverLayer');
+            resizable.appendTo('#draggable-test');
+            creepyimgItem.appendTo("#resizable-item");            
             
-            it.appendTo('#canvasContent');
 
             
         }

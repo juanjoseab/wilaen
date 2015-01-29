@@ -224,6 +224,28 @@ div.ui-block-b.creepy-galleryitem span {
 	border-left: 1px #333 solid;*/
 }
 
+.wrap_controls {
+	background: url(../img/controls/bg.png) repeat;
+	border-left: 1px #333 solid;
+	z-index: 99999999999999999;
+	
+}
+
+.wrap_controls div {
+	overflow: hidden;
+	margin: 0 auto !important;
+}
+
+.wrap_controls img {
+	width: auto;
+	height: 100%;
+	float: left;
+	margin: 0;
+	padding:0;
+
+}
+
+
 #canvas_controls img {
 	display: block;
 	width: 70%;

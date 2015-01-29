@@ -28,6 +28,13 @@ $(function(){
         //$('.creepyfooter').css('bottom',windowHeight - 120 + "px");
         $('.creepyfooter').css('bottom',0);
     }
+
+    setInterval(function(){
+        var windowHeight = $(window).height();
+        var ctrlBtnW = $(".wrap_controls div img").width();
+        $(".wrap_controls div").css ("height" , windowHeight/5 + "px !important").width(ctrlBtnW * 5);
+    },500);
+
     resizes();
     $(window).resize(function(){
         resizes();
@@ -55,6 +62,7 @@ $(function(){
 
         if($.mobile.activePage.is('#creepygallery')){
             $.mobile.changePage("#create", { transition: "flip", changeHash: false });
+            resizes();
         }
 
         if($.mobile.activePage.is('#mycreepygallery')){
@@ -109,7 +117,7 @@ $(function(){
         createCanvas();
         $.mobile.changePage( "#create", { transition: "flip", changeHash: false });
         */
-        
+
         navigator.camera.getPicture(function(imageData){
             photoData = imageData;
             createCanvas();
@@ -126,11 +134,14 @@ $(function(){
     }
 
     function openCamera() {
-        /*console.log('en la funcion de la camara');
+
+        /*
+        console.log('en la funcion de la camara');
         photoData = "img/testpics/paisaje.jpg";
         createCanvas();
         $.mobile.changePage( "#create", { transition: "flip", changeHash: false });
         */
+
         
         navigator.camera.getPicture(function(imageData){
             photoData = imageData;

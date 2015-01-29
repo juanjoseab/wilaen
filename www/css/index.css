@@ -113,18 +113,100 @@ canvas {
 	overflow: hidden;	
 }
 
+
 .draggable-test {
-		width: 100%;
-		overflow: hidden;
+	border: none;
+	width: 50% !important;
+	color: #fff;	
+	position: relative !important; 
+	z-index: 999;
+	display: -moz-inline-stack;
+    display: inline !important;
+    vertical-align: top;
+    *display: inline;   
+    cursor: hand; 
+    cursor: pointer
 }
-.draggable-test {
-	width: 200px;
+
+.resizable-item {
+	border: none;	
+	width: 100%;
+	top: 0 !important;
+	left: 0 !important;
 	height: auto;
-	color: #fff;
-	position: absolute !important;
+	position: absolute;
+	width: 250px;
+}
+
+.resizable-item img {
+	width: 100%;
+	height: auto;
+}
+
+.canvasOverLayer {
+	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 9999999;
+	width: 100%;
+	height: 200px;
+}
+
+.ui-resizable-handle 
+{
+    
+    border: 1px solid #FFF;
+    width: 15px;
+    height: 15px;    
+    z-index: 99999999999;
+    position: absolute;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    cursor: pointer;
+    opacity: 0.7;
+    background: #f5dc58;
+}
+.ui-resizable-se
+{
+	display: block !important;
+	position: absolute;
+    right: -5px;
+    bottom: -5px;
+}
+
+.ui-resizable-sw
+{
+	display: block !important;
+	position: absolute;
+    left: -5px;
+    bottom: -5px;
+}
+.ui-resizable-nw
+{
+	display: block !important;
+	position: absolute;
+    top: -5px;
+    right: -5px;
+    
+}
+
+.ui-resizable-ne {
+	display: block !important;
+	position: absolute;
+	left:  -5px;
+	top: -5px;
+	
+}
+
+.ui-rotatable-handle {
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+    background-image: url(../img/rotate.png);
+    background-size: 100%;
+    right: -25px !important;
+    bottom: -25px !important;
 }
 
 .creepyfooter {
@@ -223,6 +305,28 @@ div.ui-block-b.creepy-galleryitem span {
 	/*background: url(../img/controls/bg.png) repeat;
 	border-left: 1px #333 solid;*/
 }
+
+.wrap_controls {
+	background: url(../img/controls/bg.png) repeat;
+	border-left: 1px #333 solid;
+	z-index: 99999999999999999;
+	
+}
+
+.wrap_controls div {
+	overflow: hidden;
+	margin: 0 auto !important;
+}
+
+.wrap_controls img {
+	width: auto;
+	height: 100%;
+	float: left;
+	margin: 0;
+	padding:0;
+
+}
+
 
 #canvas_controls img {
 	display: block;
